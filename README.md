@@ -8,5 +8,6 @@ See game_instructions.txt for original instructions and credits.
 
 * Send client timestamp to account for network latency
 * Update scraper for more recent games
+* Dynamically scrape game of interest
 * Add Daily Doubles & Final Jeopardy
 * Multiple room games
