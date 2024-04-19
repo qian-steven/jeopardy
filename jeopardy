@@ -1,0 +1,5 @@
+#!/bin/sh
+
+SCRIPT_DIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
+cd $SCRIPT_DIR/program_contents
+(trap 'kill 0' SIGINT; python3 -m http.server 80 & python3 py_buzzer_server.py)
